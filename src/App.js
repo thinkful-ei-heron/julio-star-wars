@@ -30,7 +30,6 @@ export class App extends Component {
         return res.json();
       })
       .then((data) => this.setState({ results: data.results, loading: false }))
-      .then(console.log(this.state.results))
       .catch((error) => this.setState({ error }));
   };
   render() {
