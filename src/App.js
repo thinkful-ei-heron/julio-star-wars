@@ -10,7 +10,6 @@ export class App extends Component {
       results: [],
       loading: false,
       error: null,
-      touched: false,
     };
   }
   getData = (e) => {
