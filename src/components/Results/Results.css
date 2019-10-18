@@ -1,0 +1,19 @@
+.items-container {
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 5px auto;
+  max-width: 1200px;
+  font-weight: 700;
+}
+.results-container {
+  padding: 10px;
+  text-transform: capitalize;
+  color: white;
+}
+p {
+  text-align: center;
+}

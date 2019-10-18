@@ -1,0 +1,15 @@
+.main-form {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+input,
+select,
+button {
+  width: 150px;
+  margin: 2px auto;
+}
