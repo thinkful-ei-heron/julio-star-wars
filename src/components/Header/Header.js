@@ -4,7 +4,7 @@ export class Header extends Component {
   render() {
     return (
       <header>
-        <h1>Star Wars Encyclopedia</h1>
+        <h1>Star Wars Searcher 9000.1</h1>
       </header>
     );
   }

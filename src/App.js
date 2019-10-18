@@ -10,6 +10,7 @@ export class App extends Component {
       results: [],
       loading: false,
       error: null,
+      touched: false,
     };
   }
   getData = (e) => {
@@ -29,6 +30,7 @@ export class App extends Component {
         return res.json();
       })
       .then((data) => this.setState({ results: data.results, loading: false }))
+      .then(console.log(this.state.results))
       .catch((error) => this.setState({ error }));
   };
   render() {
@@ -37,7 +39,7 @@ export class App extends Component {
         <Header />
         <SearchBar getData={this.getData} />
         {this.state.loading ? (
-          <div class='lds-dual-ring'></div>
+          <div className='lds-dual-ring'></div>
         ) : (
           <Results results={this.state.results} />
         )}

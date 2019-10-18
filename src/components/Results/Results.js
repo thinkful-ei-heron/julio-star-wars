@@ -7,7 +7,7 @@ export class Results extends Component {
       <section className='results-container'>
         <>
           {this.props.results.length === 0 ? (
-            <p>No items</p>
+            <p>Nothing Found</p>
           ) : (
             this.props.results.map((item) => (
               <div
